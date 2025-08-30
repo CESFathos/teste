@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluções De Exportações</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='init.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" class="logo-img">
+                <span>Soluções de Exportações - Brasil</span>
+            </a>
+            <div class="menu-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('active')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="/">Homepage</a></li>
+                    <li><a href="/videos">Vídeos</a></li>
+                    <li><a href="/documentacao">Documentação</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <section class="hero">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" class="logo-img">
+            <h1>Bem-vindo a Soluções de Exportações</h1>
+            <p>Resolvendo os problemas econômicos do Brasil.</p>
+        </section>
+
+        <!-- Notícias / Artigos -->
+        <section class="articles-section">
+            <article class="article-card">
+                <div class="article-content">
+                    <h2>Introdução</h2>
+                    <p>O excesso de exportações no Brasil tem gerado impactos profundos tanto internamente quanto no cenário internacional. Dentro do país, a região Centro-Oeste se destaca como a mais afetada, já que passou de 3,4% para 16,8% das exportações nacionais entre 1997 e 2023. Esse crescimento acelerado, baseado quase exclusivamente em commodities agrícolas, trouxe dinamismo econômico, mas também intensificou problemas como pressão ambiental, concentração de terras e dependência produtiva. O Sul, por sua vez, mantém força por contar com um agronegócio robusto e uma indústria diversificada, o que garante maior resistência às oscilações de preços. Já o Sudeste perdeu participação relativa, mas segue relevante como centro logístico e financeiro, apostando em produtos de maior valor agregado. O Norte e o Nordeste, em contraste, apresentam baixa integração com o mercado internacional e ficaram à margem do boom exportador.</p>
+                </div>
+            </article>
+            <article class="article-card">
+                <div class="article-content">
+                    <h2>Sobre</h2>
+                    <p>O Brasil é um dos maiores exportadores de commodities do mundo, o que garante divisas, empregos e força internacional. No entanto, o excesso de exportações traz sérios problemas: aumenta a inflação dos alimentos ao reduzir a oferta interna, aprofunda a dependência de commodities em detrimento da indústria, deixa a economia vulnerável a crises externas e provoca impactos socioambientais, como desmatamento e conflitos de terra. Assim, embora exportar seja essencial para o crescimento econômico, o país precisa equilibrar esse modelo com o abastecimento interno e a industrialização, garantindo um desenvolvimento sustentável que beneficie a população brasileira.</p>
+                </div>
+            </article>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 - Soluções de Exportações Brasil</p>
+    </footer>
+</body>
+</html>
